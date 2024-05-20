@@ -1,0 +1,156 @@
+/* CSS for Navbar */
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+body {
+    background-color: #727c84;
+    font-family: 'Play', sans-serif;
+}
+
+/* Header styles */
+header {
+    background-color: #455768;
+    padding: 24px 50px;
+}
+
+header .logo {
+    color: #f5ab51;
+    font-family: "Orbitron", sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar-nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-item {
+    margin: 0 10px;
+    color: white;
+    transition: all .3s;
+}
+
+.nav-link:hover {
+    color: #FDE49E;
+}
+
+.search-container {
+    position: relative;
+}
+
+#searchInput {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+}
+
+#searchInput:focus {
+    border-color: #f2f3fb;
+}
+
+/* main-content */
+.main-content {
+    color: white;
+    padding: 50px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.text-center{
+    text-align: center;
+    padding: 24px 0;
+    font-size: 32px;
+    font-weight: 500;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+/* CSS for movie cards */
+#dataContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 20px;
+}
+
+.movie-card {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.content {
+    position: relative;
+    overflow: hidden;
+}
+
+.layer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: #666f768a;
+    position: absolute;
+    text-align: center;
+    top: 100%;
+    transition: all .6s ease-in-out;
+    -webkit-transition: all .6s ease-in-out;
+    -moz-transition: all .6s ease-in-out;
+    -ms-transition: all .6s ease-in-out;
+    -o-transition: all .6s ease-in-out;
+}
+
+.content:hover .layer {
+    top: 0;
+}
+
+.movie-card .content h4 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+.movie-card .content .vote{
+    margin-bottom: 6px;
+}
+
+.movie-card .content .vote-number{
+    font-weight: 900;
+    color: #f5ab51;
+}
+
+.movie-card .content img {
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+}
+

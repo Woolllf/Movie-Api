@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="stylee.css" />
+</head>
+
+<body>
+
+    <header>
+        <div class="container-fluid">
+            <nav class="navbar">
+                <a class="navbar-brand logo" href="index.html">Movies</a>
+                <div class="navbar-nav">
+                    <ul>
+                        <li class="nav-item">
+                            <a class="nav-link link-name" filmCategory="now_playing" href="#">Now Playing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-name" filmCategory="popular" href="#">Popular</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-name" filmCategory="top_rated" href="#">Top Rated</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-name" filmCategory="trendingLink" href="#">Trending</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-name" filmCategory="upcoming" href="#">Up Coming</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="search-container">
+                    <input type="search" placeholder="Search here..." id="searchInput" oninput="search();">
+                </div>
+           </nav>
+        </div>
+    </header>
+    
+    
+
+    <div class="main-content">
+        <div class="container">
+            <h2 class="text-center">Show Playing Now Movies</h2>
+
+            <div class="row" id="dataContainer">
+                <!-- Movie cards will be dynamically added here -->
+            </div>
+        </div>
+    </div>
+ <script src="main.js"></script>
+</body>
+
+</html>
